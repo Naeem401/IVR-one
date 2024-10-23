@@ -1,23 +1,23 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
-import { useEffect, useState } from 'react';
-import { Rating } from '@smastrom/react-rating'
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import { Navigation } from 'swiper/modules';
+// import { useEffect, useState } from 'react';
+// import { Rating } from '@smastrom/react-rating'
 
-import '@smastrom/react-rating/style.css'
+// import '@smastrom/react-rating/style.css'
 
 const Testtimonials = () => {
-    const [revews, setRevews] = useState([])
-    useEffect(() => {
-        fetch('http://localhost:5000/reviews')
-            .then(res => res.json())
-            .then(data => setRevews(data))
-    }, [])
+    // const [revews, setRevews] = useState([])
+    // useEffect(() => {
+    //     fetch('http://localhost:5000/reviews')
+    //         .then(res => res.json())
+    //         .then(data => setRevews(data))
+    // }, [])
 
     return (
         <div className='container md:w-4/5 mx-auto md:py-6'>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            {/* <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
 
                 <div>
                     {
@@ -37,7 +37,7 @@ const Testtimonials = () => {
                         </SwiperSlide>)
                     }
                 </div>
-            </Swiper>
+            </Swiper> */}
         </div>
     );
 };
